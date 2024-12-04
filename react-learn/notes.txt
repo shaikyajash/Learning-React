@@ -1,0 +1,41 @@
+PROPS:
+
+Props / Properties are arguments passed into React components.
+
+Props allows us to pass data from parent component to a child component
+
+Props are passed to components via HTML attributes.
+
+
+
+
+CONDITIONAL RENDERING:
+
+Conditional rendering allows us to dynamically display different UI components or content based on specific conditions. This enables us to create more interactive and responsive user experiences
+
+
+------## State ##-----
+State is a way to "store and manage" data that can change over
+time and affects how the component renders. We define state
+using the useState Hook, which allows you to set an initial
+value and provides a way to update that state.
+
+
+-----## HOOKS ##-----
+Hooks are a new addition in React 16.8
+They let you use state and other React features
+without writing a class.
+
+
+-----## useState() ##-----
+useState Hook allows us to "track state" in a
+functional component. State generally refers
+to data or properties that need to be
+tracking in an application.
+
+
+
+
+const [data, changeData] = useState()
+        👆        👆
+   InitialValue ChangeValue
