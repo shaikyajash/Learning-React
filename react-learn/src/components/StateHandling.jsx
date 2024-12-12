@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Greet from "./Greet";
 import StateHandling2 from "./StateHandling2";
 import StateHandling3 from "./StateHandling3";
+import { use } from "react";
 
 const StateHandling = () => {
   // #################  Updating number #################
@@ -60,9 +61,17 @@ const StateHandling = () => {
     }
   )
 
-    const handleChange = (event) => {
 
+  useEffect(
+    ()=>{
+      localStorage.setItem('name', JSON.stringify(name))
+    }, [name]
+  )
+
+    const handleChange = (event) => {
+      setName(event.target.value);
     }
+    const handleClear = () => setName("");
 
 
 
@@ -107,7 +116,6 @@ const StateHandling = () => {
         <input type="text" value={name} onChange={handleChange} placeholder="Enter your name"/>
         <button onClick={handleClear} >Clear Name</button>
       </div>
-
 
     </section>
   );

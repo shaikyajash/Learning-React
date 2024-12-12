@@ -13,6 +13,7 @@ import "./index.css";
 import IconComponent from "./components/IconComponent";
 import EventHandler from "./components/EventHandler";
 import StateHandling from "./components/StateHandling";
+import TodoList from "./components/TodoList";
 
 
 const App = () => {
@@ -34,6 +35,8 @@ const App = () => {
       <IconComponent />
       <EventHandler />
       <StateHandling />
+      <TodoList/>
+
 
 
     </div>
