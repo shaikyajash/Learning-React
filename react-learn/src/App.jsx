@@ -18,6 +18,9 @@ import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
 import CopyInput from "./components/CopyInput";
 import PopupCpntent from "./components/PopupContent";
+import Switcher from "./components/Switcher";
+import EffectHandling from "./components/EffectHandling";
+import EffectHandling2 from "./components/EffectHandling2";
 
 
 const App = () => {
@@ -43,6 +46,11 @@ const App = () => {
       <Profile/>
       <ShoppingList/>
       <CopyInput/>
+      <Switcher/>
+      <EffectHandling />
+      <EffectHandling2 />
+      
+
 
 
 
