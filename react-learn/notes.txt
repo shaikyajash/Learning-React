@@ -39,3 +39,38 @@ tracking in an application.
 const [data, changeData] = useState()
         👆        👆
    InitialValue ChangeValue
+
+
+
+
+
+
+-----## useEffect() ##-----
+
+useEffect Hook allows you to perform side effects in
+your components. Some examples of side effects
+are: fetching data, directly updating the DOM etc.
+
+
+        ###  Context API ###
+Context API is a feature that allows you to manage and
+share state across your component tree without having to
+pass props down manually at every level. It's useful for
+scenarios where you need to share data or functions
+across many components, especially when these
+components are deeply nested.
+
+##########  useContext() #########
+useContext Hook allows us to access the context values
+provided by a Context object directly within a functional
+component. Context provides a way to pass data through
+the component tree without having to pass props down
+manually at every level.
+
+
+     ### useReducer() ###
+useReducer is a hook that is similar to useState,
+but it is designed for more complex state objects
+or state transitions that involves multiple sub-
+values. It allows you to manage state in a
+functional. Immutable way. 

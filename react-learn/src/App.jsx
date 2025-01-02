@@ -21,6 +21,19 @@ import PopupCpntent from "./components/PopupContent";
 import Switcher from "./components/Switcher";
 import EffectHandling from "./components/EffectHandling";
 import EffectHandling2 from "./components/EffectHandling2";
+import ComponentA from "./components/contextapi/ComponentA";
+import UserProfile from "./components/contextapi/activity/UserProfile";
+import { UserProvider } from "./components/contextapi/activity/UserContext";
+import UpdateUser from "./components/contextapi/activity/UpdateUser";
+import Reducer from "./components/usereducer/Reducer";
+import Counter from "./components/usereducer/activity/Counter";
+
+import Ref from "./components/useref.jsx/Ref";
+import FocusInput from "./components/useref.jsx/FocusInput";
+import Timer from "./components/useref.jsx/Timer";
+import Usinghook from "./components/Customhooks/Usinghook";
+import UniqueID from "./components/Idhook/UniqueID";
+
 
 
 const App = () => {
@@ -49,6 +62,22 @@ const App = () => {
       <Switcher/>
       <EffectHandling />
       <EffectHandling2 />
+      <ComponentA />
+        <UserProvider>
+          <UserProfile />
+          <UpdateUser />
+        </UserProvider>
+      <Reducer />
+      <Counter />
+      <Ref />
+      <FocusInput />
+      <Timer />
+      <Usinghook />
+      <UniqueID />
+
+      
+
+
       
 
 
